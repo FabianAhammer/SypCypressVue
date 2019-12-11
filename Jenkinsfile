@@ -3,8 +3,8 @@ pipeline {
     agent any
 
     tools {
-        nodejs "node"
-        org.jenkinsci.plugins.xvfb.XvfbInstallation 
+        nodejs 'node'
+        org.jenkinsci.plugins.xvfb.XvfbInstallation 'xvfb'
     }
 
     environment {
