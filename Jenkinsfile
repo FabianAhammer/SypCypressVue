@@ -10,7 +10,7 @@ pipeline {
     stage('build and test') {
       steps {
         sh 'npm ci'
-        sh "npm run easy:start"
+        sh "npm run serve:vue:test"
       }
     }
   }
