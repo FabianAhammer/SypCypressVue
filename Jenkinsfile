@@ -2,7 +2,10 @@
 pipeline {
     agent any
 
-    tools {nodejs "node"}
+    tools {
+        nodejs "node"
+        xvfb "xvfb"
+    }
 
     environment {
         CHROME_BIN = '/bin/google-chrome'
@@ -19,7 +22,13 @@ pipeline {
                 sh 'npm run build'
             }
         }
-        stage('e2e Tests') {
+        stage('Start test server')
+        {
+            steps {
+                sh 'npm run serve'
+            }
+        }
+        stage('Cypress e2e Tests') {
             steps {
                 sh 'npm run test:acceptance'
             }
