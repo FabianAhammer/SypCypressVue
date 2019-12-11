@@ -4,7 +4,6 @@ pipeline {
 
     tools {
         nodejs 'node'
-        org.jenkinsci.plugins.xvfb.XvfbInstallation 'default'
     }
 
     environment {
