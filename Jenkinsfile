@@ -18,7 +18,10 @@ pipeline {
         }        
         stage('Cypress e2e Tests') {
             steps {
-                sh 'npm run test:e2e'
+                 wrap([$class: 'Xvfb']) 
+                 {
+                     sh 'npm run test:acceptance'                    
+                 }
             }
         }
         stage('Deploy') {
