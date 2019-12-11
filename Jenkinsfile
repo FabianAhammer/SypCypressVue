@@ -8,9 +8,6 @@ pipeline {
 
   stages {
     stage('build and test') {
-      environment {
-      }
-
       steps {
         sh 'npm ci'
         sh "npm run test:ci:record"
