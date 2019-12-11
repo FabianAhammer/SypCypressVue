@@ -29,7 +29,7 @@ pipeline {
         }
         stage('Cypress e2e Tests') {
             steps {
-                sh 'npm run test:acceptance'
+                sh 'npm run test:e2e'
             }
         }
         stage('Deploy') {
