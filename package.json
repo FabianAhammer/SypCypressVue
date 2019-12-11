@@ -14,7 +14,7 @@
     "test:integration": "cypress_mode=integration cypress run --browser chrome",
     "test:integration-open": "cypress_mode=integration cypress open",
     "test:unit": "vue-cli-service test:unit",
-    "start:ci": "npm serve --no-clipboard --listen ${PORT:-8080}",
+    "start:ci": "npm run serve --no-clipboard --listen ${PORT:-8080}",
     "start:ci:windows": "serve --no-clipboard --listen 8080",
     "easy:start": "npm run start:ci && npm run e2e:chrome",
     "dev": "npm start",
