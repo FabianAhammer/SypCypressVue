@@ -1,8 +1,7 @@
 {
-  "name": "advanced-vue-component-composition-with-container-components",
+  "name": "avcp",
   "version": "0.1.0",
-  "author": "Markus Oberlehner",
-  "homepage": "https://github.com/maoberlehner/advanced-vue-component-composition-with-container-components",
+  "author": "Ahammer Fabiam",
   "license": "MIT",
   "private": true,
   "scripts": {
@@ -17,7 +16,7 @@
     "test:unit": "vue-cli-service test:unit",
     "start:ci": "npm serve --no-clipboard --listen ${PORT:-8080}",
     "start:ci:windows": "serve --no-clipboard --listen 8080",
-    "easy:start": "start:ci e2e:chrome",
+    "easy:start": "npm run start:ci && npm run e2e:chrome",
     "dev": "npm start",
     "types": "tsc --noEmit",
     "test": "npm start & cypress run",
