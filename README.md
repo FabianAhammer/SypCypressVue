@@ -1,6 +1,5 @@
 # Cypress Vuejs
 
-This is an example project for the following article: [Advanced Vue.js Component Composition With Container Components](https://markus.oberlehner.net/blog/advanced-vue-component-composition-with-container-components/)
 
 ## Build Setup
 ```bash
@@ -18,5 +17,5 @@ npm run test:acceptance
 ```
 
 
-[Creator]( https://twitter.com/MaOberlehner )
+[Slides]( https://slides.com/fabianahammer/deck-e0b99c )
 
