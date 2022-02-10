@@ -67,6 +67,6 @@
     "eslint-plugin-cypress": "^2.2.0",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-vue": "^5.2.1",
-    "node-sass": "^4.11.0"
+    "node-sass": "^7.0.0"
   }
 }
